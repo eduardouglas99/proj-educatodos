@@ -23,7 +23,7 @@ $(function(){
 	$('[name="datanasc"]').mask("00/00/0000");
 
 	$( ".form-modal" ).submit(function( event ) {
- 		alert( "Formulario preenchido com sucesso, muito obrigado" );
+ 		alert( "Formulario preenchido com sucesso, muito obrigado!" );
   		event.preventDefault();
   		location.reload();
 	});
