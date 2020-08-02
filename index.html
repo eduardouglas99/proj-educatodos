@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Educatodos</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,700;1,100;1,300;1,700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/f9040905d9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+	<div class="topo">
+		<div class="container">
+			<ul class="flex lista-topo">
+				<a href="index.html">
+					<li>Home</li>
+				</a>
+				<a href="participante.html">
+					<li>Participante</li>
+				</a>
+				<a href="#quem-somos" goto="contato">
+					<li>Quem Somos</li>
+				</a>
+			</ul>
+		</div>
+	</div>
+	<div class="topo topo-mobile">
+		<div class="container">
+			<i class="fas fa-bars" id="icon-mob"></i>
+			<ul class="flex lista-topo">
+				<a href="#">
+					<li>Home</li>
+				</a>
+				<a href="participante.html">
+					<li>Participante</li>
+				</a>
+				<a href="#quem-somos" goto="contato">
+					<li>Quem Somos</li>
+				</a>
+			</ul>
+		</div>
+	</div>
+	<div class="topo-m">
+		<div class="container">
+			<h1>Bem-vindo ao </h1>
+				<h1><span>EducaTodos</span>
+			</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>
+	<div class="topo-f"></div>
+</header>
+<section class="info-partic">
+	<div class="container flex">
+		<div class="grupo gp-requesitos">
+			<h2>Quero partipar! Posso?</h2>
+			<h3>Requesitos:</h3>
+			<ul>
+				<li>Ter entre 13 a 24 anos</li>
+				<li>Matricula ativa em uma escola publica pelo SEEDUC/RJ</li>
+				<li>Renda familiar menor que 1 salario minimo</li>
+			</ul>
+		</div>
+		<div class="grupo gp-cadastro">
+			<h2>Faça seu cadastro:</h2>
+			<a href="#abrirModal" id="link-modal">
+				<button>Cadastrar</button>
+			</a>
+			<p>ou</p>
+			<h2>Consulte sua situação:</h2>
+			<a href="#">
+				<button>Consultar</button>
+			</a>
+		</div>	
+	</div>
+	
+	<div class="rodape-s"></div>
+</section>
+<div id="abrirModal" class="modal">
+	<section class="formulario">
+		<i class="fas fa-times-circle" id="link-close"></i>
+		<div class="container">
+			<form class="form-modal">
+				<h2>Informe seu dados</h2>
+				<div class="form-gp flex">
+					<div class="w50">
+						<label>Nome</label>
+						<input type="text" name="nome" required="required">
+					</div>
+					<div class="w50">
+						<label>CPF</label>
+						<input type="text" name="cpf" required="required">
+					</div>
+				</div>
+				<div class="form-gp flex">
+					<div class="w50">
+						<label>Celular</label>
+						<input type="text" name="numcel" required="required">
+					</div>
+					<div class="w50">
+						<label>Email</label>
+						<input type="email" name="nome" required="required">
+					</div>
+				</div>
+				<div class="form-gp flex">
+					<div class="w50">
+						<label>CEP</label>
+						<input type="text" name="cep" required="required">
+					</div>
+					<div class="w50">
+						<label>Data de Nascimento</label>
+						<input type="text" name="datanasc" required="required">
+					</div>
+				</div>
+				<div class="form-gp flex termo-resp">
+					<input type="checkbox" required="required">
+					<span><a href="#">Termo de uso</a> e <a href="#">responsabilidade</a></span>
+				</div>
+				<button value="enviar">Enviar</button>
+			</form>
+		</div>
+	</section>
+</div>
+<section class="quem-somos" id="quem-somos">
+	<div class="container flex">
+		<div class="informativo">
+			<h3>Quem Somos</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<img src="assets/images/quem-somos.jpg">
+	</div>
+</section>
+<div class="foot-topo"></div>
+<footer>
+	<div class="container">
+		<div class="flex">
+			<div class="contato telefone">
+				<h3>Telefone:</h3>
+				<p>(21) 3223-3083</p>
+				<span>(21) 99961-5530</span>
+			</div>
+			<div class="contato horarios">
+				<h3>Horarios:</h3>
+				<p>Segunda a sexta:</p>
+				<span>08:00 - 12:00 - 14:00 - 18:00</span>
+			</div>
+			<div class="contato endereco">
+				<h3>Endereço:</h3>
+				<p>Av. Trompowsky, 291. Torre 1 sala 103 Cep 88015-300 - Florianópolis, SC.</p>
+			</div>	
+		</div>
+	</div>
+</footer>
+
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/jquery.mask.min.js"></script>
+<script src="assets/js/style.js"></script>
+</body>
+</html>

@@ -1,0 +1,397 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+}
+
+.topo-mobile{
+	display: none;
+}
+
+.flex{
+	display: flex;
+	align-items: center;
+}
+
+.container{
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+.topo{
+	background-color: #000;
+	padding: 0 20px;
+}
+
+.lista-topo{
+	justify-content: flex-end;
+	list-style: none;
+}
+
+.lista-topo a{
+	text-decoration: none;
+}
+
+.lista-topo a:nth-child(2){
+	padding: 15px 50px;
+}
+
+.lista-topo a:hover{
+	transform: scale(1.1);
+	text-decoration: underline;
+}
+
+.topo-m{
+	background-color: #117a24;
+	padding: 80px 15px;
+}
+
+.topo-m span{
+	color: #00420c;
+	padding: 0 0 0 90px;
+}
+
+.topo-m p{
+	padding: 30px 0;
+    max-width: 630px;
+}
+
+.topo-f{
+	background-color: #00420c;
+	padding: 20px 15px;
+}
+
+.info-partic{
+	background-image: url('../images/bg-fundo.png');
+	background-size: 100% 100%;
+}
+
+.info-partic .flex{
+	justify-content: space-between;
+	padding: 60px 15px;
+	align-items: initial;
+}
+
+.info-partic .grupo ul{
+	list-style-position: inside;
+}
+
+.info-partic .grupo ul li{
+	padding: 5px 0;
+}
+
+.info-partic .gp-requesitos h2,
+.info-partic .gp-requesitos h3{
+	padding: 0 0 15px 0;
+}
+
+.info-partic .gp-requesitos{
+	text-align: left;
+}
+
+.info-partic .gp-cadastro{
+    text-align: center;
+    box-shadow: 16px 10px 13px -1px #004b88;
+    padding: 20px;
+    border: 2px solid #ffffff;
+}
+
+.info-partic .gp-cadastro p{
+	font-size: 21px;
+    padding: 15px 0;
+}
+
+.info-partic .gp-cadastro a button{
+	width: 50%;
+    padding: 10px 0;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 1px solid #004b88;
+    margin-top: 15px;
+    background: linear-gradient(385deg, #004b88, transparent);
+    color: #fff;
+    cursor: pointer;
+}
+
+.info-partic .gp-cadastro button:hover{
+	background: linear-gradient(385deg, #03111d, transparent);
+}
+
+.info-partic .rodape-s{
+	background: #1569AE;
+	height: 80px;
+}
+
+.quem-somos{
+	padding: 50px 15px;
+}
+
+.quem-somos .informativo{
+	max-width: 620px;
+    margin: 0 auto;
+}
+
+.quem-somos img{
+	width: 500px;
+	margin: 0 auto;
+    padding: 20px 0;
+}
+
+.quem-somos h3,
+.quem-somos p {
+	color: #000;
+	padding: 10px 0;
+	text-align:justify;
+}
+
+.quem-somos h3{
+	font-weight: 400;
+	font-size: 25px;
+}
+
+.foot-topo{
+	background-color: #00420c;
+	padding: 20px 0;
+}
+
+footer{
+	background-color: #117a24;
+	padding: 40px 15px;
+}
+
+footer .flex{
+	justify-content: space-between;
+	align-items: normal;
+}
+
+footer .contato{
+	max-width: 300px;
+}
+
+footer .contato h3{
+	padding: 10px 0;
+}
+
+footer p{
+	font-style: italic;
+	padding: 10px 0;
+}
+
+footer .contato span{
+    display: block;
+    font-style: italic;
+}
+
+@media screen and (max-width: 1024px){
+    .info-partic .gp-cadastro {
+    	padding: 15px 10px;
+    }
+
+    .quem-somos img {
+    	width: 300px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.topo-m .container,
+	.info-partic .gp-requesitos {
+		text-align: center;
+	}
+
+	.topo-m {
+    	padding: 40px 15px;
+	}
+
+	.topo-m p{
+		margin: 0 auto
+	}
+
+	.info-partic .flex {
+		flex-direction: column;
+		padding: 40px 15px;
+    	height: 540px;
+	}
+
+	.info-partic .gp-cadastro {
+    	max-width: 320px;
+    	margin: 0 auto
+    }
+
+    .info-partic .gp-cadastro h2{
+    	font-size: 20px;
+    }
+
+    .info-partic .gp-requesitos {
+    	margin-bottom: 30px;
+    }
+
+    .quem-somos .flex{
+    	flex-direction: column;
+    }
+
+    .quem-somos h3, .quem-somos p {
+    	text-align: center;
+    }
+
+    footer{
+    	padding: 0;
+    }
+
+    footer .flex{
+    	flex-direction: column;
+    	text-align: center;
+    	margin: 0 auto;
+    	max-width: 320px;
+    }
+
+    footer .contato {
+    	max-width: 350px;
+    	padding: 10px;
+	}
+
+	.topo,
+	.topo-mobile ul {
+		display: none;
+	}
+	.topo-mobile {
+		display: block;
+	}
+    
+    .topo-mobile i{
+    	padding: 10px 0;
+    	font-size: 25px;
+    	text-align: right;
+    	display: block;
+	}
+
+	.topo-mobile ul{
+		display: none;
+    	padding: 20px 0px;
+    	text-align: center;
+	}
+
+}
+
+.modal {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+	display: none;
+	height: 100%;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.modal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal > div {
+  width: 400px;
+  position: relative;
+  margin: 10% auto;
+  padding: 15px 20px;
+  background: #fff;
+}
+
+#link-close {
+	font-size: 30px;
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    cursor: pointer;
+}
+
+.formulario{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.formulario form{
+	text-align: center;
+	padding: 30px 20px;
+	margin: 0 auto;
+    max-width: 600px;
+    border: 2px solid #000;
+    background: linear-gradient(135deg, black, #352e2e);
+}
+.formulario form h2{
+	padding: 0 0 20px 0;
+}
+
+.formulario .form-gp{
+	justify-content: center;
+	padding: 10px 0;
+}
+
+.w50 {
+	width: 50%;
+}
+
+.formulario form label{
+	display: block;
+	text-align: left;
+	padding: 0 0 10px 10px;
+}
+
+
+.formulario form input{
+    border-radius: 7px;
+    border: 1px solid #1d7ac7;
+    padding: 10px;
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+}
+
+.formulario form input[type=text],
+.formulario form input[type=email]{
+	width: 95%;
+}
+
+.formulario form .termo-resp{
+	justify-content: flex-start;
+	padding: 20px 10px;
+}
+
+.formulario form input[type=checkbox]{
+	margin-right: 10px;
+}
+
+.formulario form button{
+	display: block;
+    margin: 0 auto;
+    color: #000;
+    padding: 10px 51px;
+    border-radius: 11px;
+    border: 1px solid #000;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+.formulario h2,
+.formulario label,
+.formulario input,
+.formulario h2 button {
+	color: #fff;
+}
