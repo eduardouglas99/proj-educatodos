@@ -16,7 +16,7 @@
 				<a href="index.html">
 					<li>Home</li>
 				</a>
-				<a href="participante.html">
+				<a href="#info-partic" goto="participante">
 					<li>Participante</li>
 				</a>
 				<a href="#quem-somos" goto="contato">
@@ -32,7 +32,7 @@
 				<a href="#">
 					<li>Home</li>
 				</a>
-				<a href="participante.html">
+				<a href="#info-partic" goto="participante">
 					<li>Participante</li>
 				</a>
 				<a href="#quem-somos" goto="contato">
@@ -46,47 +46,54 @@
 			<h1>Bem-vindo ao </h1>
 				<h1><span>EducaTodos</span>
 			</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>O programa social que leva educação e oportunidades aos jovens!
+			Nosso objetivo é dar acessibilidade à educação por meio de livros. Disponibilizaremos livros em formato digital para aqueles que já possuem um meio de acesso a internet, para aqueles que não possuem, nós estaremos entregando os livros na escola mais próxima do CEP cadastrado, ou enviaremos um tablet com acesso a internet ilimitada durante os horários de estudos.</p>
 		</div>
 	</div>
 	<div class="topo-f"></div>
 </header>
-<section class="info-partic">
+<section class="info-partic" id="info-partic">
 	<div class="container flex">
 		<div class="grupo gp-requesitos">
-			<h2>Quero partipar! Posso?</h2>
+			<h2>Quero participar! Posso?</h2>
 			<h3>Requesitos:</h3>
 			<ul>
 				<li>Ter entre 13 a 24 anos</li>
 				<li>Matricula ativa em uma escola publica pelo SEEDUC/RJ</li>
-				<li>Renda familiar menor que 1 salario minimo</li>
+				<li>Renda familiar menor que 1 salário mínimo</li>
 			</ul>
 		</div>
 		<div class="grupo gp-cadastro">
 			<h2>Faça seu cadastro:</h2>
 			<a href="#abrirModal" id="link-modal">
-				<button>Cadastrar</button>
+				<button class="btn-style">Cadastrar</button>
 			</a>
 			<p>ou</p>
 			<h2>Consulte sua situação:</h2>
-			<a href="#">
-				<button>Consultar</button>
-			</a>
+			<button class="btn-style" id="open-login">Consultar</button>
 		</div>	
 	</div>
 	
-	<div class="rodape-s"></div>
+	<div class="rodape-s">
+			<form class="login-consulta">
+				<div class="flex flex-login">
+					<div class="form-login">
+						<label>CPF</label>
+						<input type="text" name="cpf" required="required">
+					</div>
+					<button>Enviar</button>
+				</div>
+			<div class="resultado-consulta">
+				<p id="consulta-form"></p>
+			</div>
+			</form>
+	</div>
 </section>
 <div id="abrirModal" class="modal">
 	<section class="formulario">
 		<i class="fas fa-times-circle" id="link-close"></i>
 		<div class="container">
-			<form class="form-modal">
+			<form class="form-modal" method="post" action="">
 				<h2>Informe seu dados</h2>
 				<div class="form-gp flex">
 					<div class="w50">
@@ -105,7 +112,7 @@
 					</div>
 					<div class="w50">
 						<label>Email</label>
-						<input type="email" name="nome" required="required">
+						<input type="email" name="email" required="required">
 					</div>
 				</div>
 				<div class="form-gp flex">
@@ -119,11 +126,19 @@
 					</div>
 				</div>
 				<div class="form-gp flex termo-resp">
-					<input type="checkbox" required="required">
+					<input type="checkbox" required="required" name="salario">
+					<span>Renda familiar menor que 1 salário mínimo</span>
+				</div>
+				<div class="form-gp flex termo-resp pd">
+					<input type="checkbox" required="required" name="termoUso">
 					<span><a href="#">Termo de uso</a> e <a href="#">responsabilidade</a></span>
 				</div>
 				<button value="enviar">Enviar</button>
+					<i class="fas fa-spinner btn-load"></i>
 			</form>
+			<div class="log-erro">
+				<p id="log-box"></p>
+			</div>
 		</div>
 	</section>
 </div>
@@ -131,14 +146,10 @@
 	<div class="container flex">
 		<div class="informativo">
 			<h3>Quem Somos</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Diante de toda a dificuldades que o nosso mundo tem passado, os jovens de baixa renda estão tendo cada vez mais problemas em ter uma educação de qualidade, e isso reflete diretamente no futuro do país. Com isso em vista, o BNDES decide criar o EducaTodos, um programa social que irá levar a educação aos jovens que possuem renda de até 1 salário mínimo.<br>
+            Nossa missão é dar oportunidades e levar conhecimento para aqueles que serão o futuro de nossa nação</p>
 		</div>
-		<img src="assets/images/quem-somos.jpg">
+		<img src="assets/images/img-quem-somos.jpg">
 	</div>
 </section>
 <div class="foot-topo"></div>
@@ -157,13 +168,16 @@
 			</div>
 			<div class="contato endereco">
 				<h3>Endereço:</h3>
-				<p>Av. Trompowsky, 291. Torre 1 sala 103 Cep 88015-300 - Florianópolis, SC.</p>
+				<p>Av. Prof. Pereira Reis, 119 - Santo Cristo, Rio de Janeiro - RJ.</p>
 			</div>	
 		</div>
 	</div>
 </footer>
 
-<script src="assets/js/jquery.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
 <script src="assets/js/jquery.mask.min.js"></script>
 <script src="assets/js/style.js"></script>
 </body>
